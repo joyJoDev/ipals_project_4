@@ -19,6 +19,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button mBtnEmoji;
 
+    private Button mBtnTellAJoke;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mBtnHead = (Button) findViewById(R.id.main_head);
         mBtnWheel = (Button) findViewById(R.id.main_wheel);
         mBtnEmoji = (Button) findViewById(R.id.main_emoji);
+        mBtnTellAJoke = (Button) findViewById(R.id.main_joke);
     }
 
     private void initListener() {
@@ -46,6 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mBtnHead.setOnClickListener(this);
         mBtnWheel.setOnClickListener(this);
         mBtnEmoji.setOnClickListener(this);
+        mBtnTellAJoke.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +67,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.main_emoji:
                 intent.setClass(MainActivity.this, EmojiActivity.class);
+                break;
+            case R.id.main_joke:
+                intent.setClass(MainActivity.this, JokeActivity.class);
                 break;
             case R.id.common_title_back:
                 finish();

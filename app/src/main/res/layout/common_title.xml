@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/ipal_robot"
+        android:text="@string/ipal_ent"
         android:textSize="24sp" />
 
 </RelativeLayout>

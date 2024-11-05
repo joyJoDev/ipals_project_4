@@ -23,6 +23,13 @@
     <string name="unit_wheel">WHEEL</string>
     <string name="unit_emoji">EMOJI</string>
     <string name="unit_sensor">SENSOR</string>
+    <string name="unit_tell_joke">Tell A Joke</string>
+    <string name="unit_joke1">Joke 1</string>
+    <string name="unit_joke2">Joke 2</string>
+    <string name="unit_joke3">Joke 3</string>
+    <string name="unit_joke4">Joke 4</string>
+    <string name="unit_joke5">Joke 5</string>
+    <string name="ipal_ent">iPal Entertainer</string>
 
     <!-- ArmActivity -->
     <string-array name="arm_direction">
