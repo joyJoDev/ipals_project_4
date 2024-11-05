@@ -3,7 +3,6 @@ package com.example.avatarmind.robotmotion;
 import android.app.Activity;
 import android.view.View;
 import android.os.Bundle;
-import android.robot.motion.RobotMotion;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +21,8 @@ public class JokeActivity extends Activity implements View.OnClickListener {
     private Button mJoke4Btn;
 
     private Button mJoke5Btn;
+
+    private RobotJoke mRobotJoke = new RobotJoke();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,19 +64,19 @@ public class JokeActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.main_joke1:
-                //mRobotMotion.joke1();
+                mRobotJoke.joke1();
                 break;
             case R.id.main_joke2:
-                //mRobotMotion.joke2();
+                mRobotJoke.joke2();
                 break;
             case R.id.main_joke3:
-                //mRobotMotion.joke3();
+                mRobotJoke.joke3();
                 break;
             case R.id.main_joke4:
-                //mRobotMotion.joke4();
+                mRobotJoke.joke4();
                 break;
             case R.id.main_joke5:
-                //mRobotMotion.joke5();
+                mRobotJoke.joke5();
                 break;
             default:
                 break;
