@@ -13,42 +13,11 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/main_motors"
+            android:id="@+id/main_tell_joke"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="@string/unit_motors"
-            android:textSize="@dimen/text_size" />
-
-        <Button
-            android:id="@+id/main_head"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/unit_head"
-            android:textSize="@dimen/text_size" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/main_wheel"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/unit_wheel"
-            android:textSize="@dimen/text_size" />
-
-        <Button
-            android:id="@+id/main_emoji"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/unit_emoji"
+            android:text="Tell a joke"
             android:textSize="@dimen/text_size" />
 
     </LinearLayout>

@@ -11,13 +11,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private ImageView mTitleBack;
 
-    private Button mBtnMotors;
+    private Button mBtnTellAJoke;
 
-    private Button mBtnHead;
-
-    private Button mBtnWheel;
-
-    private Button mBtnEmoji;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,35 +29,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         mTitleBack = (ImageView) findViewById(R.id.common_title_back);
-        mBtnMotors = (Button) findViewById(R.id.main_motors);
-        mBtnHead = (Button) findViewById(R.id.main_head);
-        mBtnWheel = (Button) findViewById(R.id.main_wheel);
-        mBtnEmoji = (Button) findViewById(R.id.main_emoji);
+        mBtnTellAJoke = (Button) findViewById(R.id.main_tell_joke);
+
     }
 
     private void initListener() {
         mTitleBack.setOnClickListener(this);
-        mBtnMotors.setOnClickListener(this);
-        mBtnHead.setOnClickListener(this);
-        mBtnWheel.setOnClickListener(this);
-        mBtnEmoji.setOnClickListener(this);
+        mBtnTellAJoke.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent();
         switch (v.getId()) {
-            case R.id.main_motors:
-                intent.setClass(MainActivity.this, MotorsActivity.class);
-                break;
-            case R.id.main_head:
+            case R.id.main_tell_joke:
                 intent.setClass(MainActivity.this, HeadActivity.class);
-                break;
-            case R.id.main_wheel:
-                intent.setClass(MainActivity.this, WheelActivity.class);
-                break;
-            case R.id.main_emoji:
-                intent.setClass(MainActivity.this, EmojiActivity.class);
                 break;
             case R.id.common_title_back:
                 finish();
